@@ -1,0 +1,125 @@
+body_menu
+{
+    max-width: 768px;
+    margin:0 auto;
+    font-family:"Roboto";
+}
+header
+{
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    padding-top: 1.5em;
+    padding-bottom: 1em;  
+}
+header i
+{
+    font-size: 1.5em;
+    margin-right: 1.5em;
+    margin-left: 1.2em;
+    color:black;
+}
+header img
+{
+    width:50%;
+}
+.photo img
+{
+    width:100%;
+    height:14em;
+    object-fit: cover;
+}
+section_menu
+{
+    display:flex;
+    flex-direction: column;
+    gap:2.5em;
+}
+.titre_restau
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.titre_restau h1
+{
+    font-family:"shrikhand";
+    font-size: 1.8em;
+    margin-bottom: 0em;
+}
+.titre_restau i
+{
+    font-size: 1.7em;
+    padding-top: 0.7em;
+}
+.menu_3_choix
+{
+    display: flex;
+    flex-direction: column;
+}
+.plats_a_b_c
+{
+    display: flex;
+    flex-direction: column;
+    gap:1.5em;
+}
+.plat_a, .plat_b, .plat_c
+{
+    width:98%;
+    height:4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0.7em;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 3px #d3cfcf;
+}
+.nom_plat
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.6em;
+}
+.nom_plat h3,.nom_plat h4
+{
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+.nom_plat h4
+{
+    font-weight: 300;
+    padding-top: 0.5em;
+}
+.prix_plat h3
+{
+    margin-top: 1.5em;
+    margin-bottom: 0em;
+    padding-right: 1.5em;
+}
+.titre_menu h2
+{
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-top: 0em;
+    text-decoration-line: underline;
+}
+.titre_menu h2 span
+{
+    text-decoration-line: none;
+}
+button
+{
+    /*width:50%;*/
+    margin:auto;
+    color:white;
+    font-size: 1.4em;
+    font-weight: 700;
+    padding-top:0.8em;
+    padding-bottom: 0.8em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    border-radius: 30px;
+    background: linear-gradient(#ff79da,#9356dc);
+    box-shadow: 5px 5px 10px 3px #d3cfcf;
+    margin-bottom: 2em;
+}
