@@ -79,6 +79,13 @@ h1
     margin-bottom: 2.7em;
     background: linear-gradient(#ff79da,#9356dc);
     box-shadow: 5px 5px 10px 3px #d3cfcf;
+    transition-property: background, box-shadow;
+    transition-duration: 40ms;
+}
+.intro_c:hover
+{
+    background: linear-gradient(#fac3ea,#ba92eb);
+    box-shadow: 5px 5px 30px 3px #7c7979;
 }
 .intro_c h3
 {
@@ -218,13 +225,18 @@ h1
 {
    margin-bottom: 0em;
    font-size: 1.3em;
-   text-decoration: none;
+
 }
 .titre_quartier h3
 {
     font-weight: 300;
     font-size: 1.1em;
     margin-top: 0.2em;
+}
+.titre_quartier a
+{
+    text-decoration: none;
+    color:black;
 }
 .coeur_vide, .coeur_plein
 {

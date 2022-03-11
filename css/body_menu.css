@@ -57,6 +57,25 @@ section_menu
     display: flex;
     flex-direction: column;
 }
+.titre_menu
+{
+    display: flex;
+    flex-direction: column;
+}
+.titre_menu h2
+{
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+.titre_menu p
+{
+    height: 0.2em;
+    width: 15%;
+    background-color: #99e2d0;
+    margin-top: 0em;
+}
 .plats_a_b_c
 {
     display: flex;
@@ -80,33 +99,31 @@ section_menu
     flex-direction: column;
     padding-left: 0.6em;
 }
-.nom_plat h3,.nom_plat h4
+
+.titre_plat
 {
-    margin-top: 0em;
+    margin-top: 0.3em;
     margin-bottom: 0em;
-}
-.nom_plat h4
-{
-    font-weight: 300;
-    padding-top: 0.5em;
-}
-.prix_plat h3
-{
-    margin-top: 1.5em;
-    margin-bottom: 0em;
-    padding-right: 1.5em;
-}
-.titre_menu h2
-{
     font-size: 1.2em;
-    font-weight: 300;
-    margin-top: 0em;
-    text-decoration-line: underline;
+    font-weight: 600;
 }
-.titre_menu h2 span
+.sous_titre_plat
 {
-    text-decoration-line: none;
+    margin-top: 0.2em;
+    margin-bottom: 0.3em;
+    font-style: 1.2em;
+    font-weight: 400;
 }
+.prix_plat
+{
+    margin-top: auto;
+    margin-bottom: 0.35em;
+    padding-right: 0.8em;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+
 button
 {
     /*width:50%;*/
@@ -119,7 +136,15 @@ button
     padding-left: 1.5em;
     padding-right: 1.5em;
     border-radius: 30px;
+    border-color: transparent;
     background: linear-gradient(#ff79da,#9356dc);
     box-shadow: 5px 5px 10px 3px #d3cfcf;
     margin-bottom: 2em;
+    transition-property: background, box-shadow;
+    transition-duration: 40ms;
+}
+button:hover
+{
+    background: linear-gradient(#fac3ea,#ba92eb);
+    box-shadow: 5px 5px 30px 3px #7c7979;
 }
