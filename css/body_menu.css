@@ -95,6 +95,8 @@ section_menu
 }
 .nom_plat
 {
+    /*width:70%;*/
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     padding-left: 0.6em;
