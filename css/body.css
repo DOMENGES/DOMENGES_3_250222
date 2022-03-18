@@ -72,6 +72,16 @@ h1
     padding-right: 1.3em;
     text-align: center;
 }
+/*@keyframes rose {
+    from{
+        background: linear-gradient(#ff79da,#9356dc);
+        box-shadow: 5px 5px 10px 3px #d3cfcf;
+    }
+    to{
+        background: linear-gradient(#fac3ea,#ba92eb);
+        box-shadow: 5px 5px 30px 3px #7c7979;
+    }
+}*/
 .intro_c
 {
     border-radius: 30px;
@@ -81,7 +91,7 @@ h1
     background: linear-gradient(#ff79da,#9356dc);
     box-shadow: 5px 5px 10px 3px #d3cfcf;
     transition-property: background, box-shadow;
-    transition-duration: 1s;
+    transition-duration: 20ms;
     transition-timing-function: ease-in-out
 }
 .intro_c:hover
@@ -247,58 +257,34 @@ h1
     text-decoration: none;
     color:black;
 }
-/*.coeur_vide, .coeur_plein
+.coeur_vide, .coeur_plein
 {
     position:absolute;
     left: 85%;  
     font-size: 2em;
     cursor:pointer;
-}*/
-@keyframes coeurs {
-   from{
-       opacity:0;
-   }
-   to{
-       opacity:1;
-       background: linear-gradient(#9356dc, #ff79da);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                -webkit-border-image: 0;
-   } 
 }
-.coeur
+
+.coeur_vide i
 {
-    position:absolute;
-    left: 85%;  
-    font-size: 2em;
-    cursor:pointer;
+    opacity: 0.5;
+    transition:opacity 0.5s;
+}
+.coeur_vide i:hover
+{   
     opacity:0;
-    animation-name:coeurs;
-    animation-duration: 2s;
 }
-/*.coeur_plein i
+.coeur_plein i
 {
-    opacity:0;
-    transition: opacity 0.5s;
-    transition-timing-function: linear;
-}
-.coeur_plein i:hover
-{
-    opacity:1;
+    opacity: 0;
     background: linear-gradient(#9356dc, #ff79da);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 -webkit-border-image: 0;
-}
-.coeur_vide i
+    transition:opacity 0.5s;
+}  
+.coeur_plein i:hover
 {
-    opacity:0.5;
-   
-    /*transition: opacity 0.5s;
-    transition-timing-function: ease-in;
+    opacity:1;
 }
-.coeur_vide i:hover
-{
-   opacity:0
-}*/
 

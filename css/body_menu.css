@@ -3,6 +3,9 @@ body_menu
     max-width: 768px;
     margin:0 auto;
     font-family:"Roboto";
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;*/
 }
 header
 {
@@ -23,17 +26,33 @@ header img
 {
     width:50%;
 }
+.photo
+{
+    position:relative;
+    z-index: -1;
+    align-items: center;
+
+}
 .photo img
 {
     width:100%;
-    height:14em;
+    height:16em;
     object-fit: cover;
 }
 section_menu
 {
+    position:absolute;
+    z-index:1;
+    top:18em;
     display:flex;
     flex-direction: column;
+    /*align-items: center;*/
+    width:100%;
     gap:2.5em;
+    background-color: #f0eeee;
+    /*background-clip: content-box;*/
+    border-radius: 30px 30px 0px 0px;
+    
 }
 .titre_restau
 {
@@ -54,6 +73,7 @@ section_menu
 }
 .menu_3_choix
 {
+
     display: flex;
     flex-direction: column;
 }
@@ -68,30 +88,49 @@ section_menu
     font-weight: 300;
     margin-top: 0em;
     margin-bottom: 0em;
+    padding-left: 0.5em;
 }
 .titre_menu p
 {
     height: 0.2em;
-    width: 15%;
+    width: 10%;
     background-color: #99e2d0;
     margin-top: 0em;
+    margin-left: 0.5em;
+}
+@keyframes opacite 
+{
+    from
+    {
+        opacity:0;
+    }
+    to
+    {
+        opacity:1;
+    }
 }
 .plats_a_b_c
 {
+    animation:opacite 5s forwards;
+    animation-delay: 0.5s;
     display: flex;
     flex-direction: column;
-    gap:1.5em;
+    align-items: center;
+    gap:1.6em;
+    opacity:0;
 }
+
 .plat_a, .plat_b, .plat_c
 {
-    width:98%;
+    width:95%;
     height:4.5em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 0.7em;
+    background-color: white;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px 3px #d3cfcf;
+    box-shadow: 1px 1px 10px 10px #d3cfcf;
 }
 .nom_plat
 {
@@ -106,14 +145,14 @@ section_menu
 {
     margin-top: 0.3em;
     margin-bottom: 0em;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 600;
 }
 .sous_titre_plat
 {
     margin-top: 0.2em;
     margin-bottom: 0.3em;
-    font-style: 1.2em;
+    font-size: 1.25em;
     font-weight: 400;
     white-space: nowrap;
     overflow: hidden;
@@ -124,6 +163,7 @@ section_menu
     margin-top: auto;
     margin-bottom: 0.35em;
     padding-right: 0.8em;
+    padding-bottom: 0.3em;
     font-size: 1.2em;
     font-weight: 600;
 }
@@ -141,15 +181,25 @@ button
     padding-left: 1.5em;
     padding-right: 1.5em;
     border-radius: 30px;
-    border-color: transparent;
+    /*border-color:transparent;*/
+    border-width: 0em;
+    background-clip: border-box;
     background: linear-gradient(#ff79da,#9356dc);
     box-shadow: 5px 5px 10px 3px #d3cfcf;
     margin-bottom: 2em;
     transition-property: background, box-shadow;
-    transition-duration: 40ms;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out
 }
 button:hover
 {
     background: linear-gradient(#fac3ea,#ba92eb);
     box-shadow: 5px 5px 30px 3px #7c7979;
 }
+footer
+{
+    position:relative;
+    z-index:2;
+    top:83em;
+}
+
