@@ -5,6 +5,25 @@ body
     margin:0 auto;
     font-family:"Roboto";
 }
+
+/*.spin
+{
+    
+    width:91%;
+    height:27.5em;
+    border:solid 1em #ff79da;
+    border-radius: 50%;
+    border-bottom-color: #9356dc;
+    animation:1.5s linear infinite spinner;
+    -webkit-animation: 1s ease-in-out infinite spinner;
+    
+}
+@keyframes spinner {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spinner {
+    to { -webkit-transform: rotate(360deg); }
+  }*/
 header
 {
     display: flex;
@@ -72,7 +91,8 @@ h1
     padding-right: 1.3em;
     text-align: center;
 }
-/*@keyframes rose {
+/*@keyframes rose 
+{
     from{
         background: linear-gradient(#ff79da,#9356dc);
         box-shadow: 5px 5px 10px 3px #d3cfcf;
@@ -82,22 +102,48 @@ h1
         box-shadow: 5px 5px 30px 3px #7c7979;
     }
 }*/
+@keyframes rose 
+{
+    0%{
+        background: linear-gradient(rgb(255, 122, 217, 1),rgba(147, 86, 220, 1));
+        box-shadow: 5px 5px 10px 3px rgba(211, 207, 207, 1);
+    }
+    20%{
+        background: linear-gradient(rgb(221, 152, 200),rgb(181, 121, 255));
+        box-shadow: 5px 5px 10px 3px rgb(192, 178, 178);
+    }
+    35%{
+        background: linear-gradient(rgb(253, 190, 233),rgb(188, 134, 253));
+        box-shadow: 5px 5px 10px 3px rgb(179, 164, 164);
+    }
+    
+    50%{
+        background: linear-gradient(rgb(252, 174, 230),rgb(214, 181, 252));
+        box-shadow: 5px 5px 10px 3px rgb(190, 171, 171);
+    }
+    70%{
+        background: linear-gradient(rgb(252, 195, 236),rgb(209, 173, 250));
+        box-shadow: 5px 5px 10px 3px rgb(126, 110, 110);
+    }
+    100%{
+        background: linear-gradient(rgb(252, 206, 238),rgb(231, 216, 250));
+        box-shadow: 5px 5px 10px 3px rgb(75, 57, 57, 1);
+    }
+}
 .intro_c
 {
     border-radius: 30px;
     margin-top: 1.7em;
     margin-bottom: 2.7em;
     background-clip: border-box;
-    background: linear-gradient(#ff79da,#9356dc);
-    box-shadow: 5px 5px 10px 3px #d3cfcf;
-    transition-property: background, box-shadow;
-    transition-duration: 20ms;
-    transition-timing-function: ease-in-out
+    background: linear-gradient(rgb(255, 122, 217, 1),rgb(147, 86, 220, 1));
+    box-shadow: 5px 5px 10px 3px rgb(211, 207, 207, 1);
+     
 }
 .intro_c:hover
 {
-    background: linear-gradient(#fac3ea,#ba92eb);
-    box-shadow: 5px 5px 30px 3px #7c7979;
+    animation:rose 0.2s ease-in-out forwards;
+    
 }
 .intro_c h3
 {

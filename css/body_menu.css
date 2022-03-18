@@ -3,9 +3,6 @@ body_menu
     max-width: 768px;
     margin:0 auto;
     font-family:"Roboto";
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;*/
 }
 header
 {
@@ -111,17 +108,41 @@ section_menu
 }
 .plats_a_b_c
 {
-    animation:opacite 5s forwards;
-    animation-delay: 0.5s;
+    animation:opacite 4s forwards;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.01s;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap:1.6em;
     opacity:0;
 }
-
+@keyframes plat {
+    from{
+        positon:absolute;
+        right:0em;
+    }
+    to{
+        position:absolute;
+        left:0em;
+        right:12em;
+    }
+}
+@keyframes prix {
+    from{
+        position: absolute;
+        
+    }
+    to{
+        position:absolute;
+        
+        right:3em;
+    }
+}
 .plat_a, .plat_b, .plat_c
 {
+    position:relative;
     width:95%;
     height:4.5em;
     display: flex;
@@ -135,14 +156,22 @@ section_menu
 .nom_plat
 {
     /*width:70%;*/
+
     overflow: hidden;
     display: flex;
     flex-direction: column;
     padding-left: 0.6em;
+    background: #99e2d0;
+    
+}
+.maybe:hover
+{
+    animation: 3s plat, 3s prix;
 }
 
 .titre_plat
 {
+    
     margin-top: 0.3em;
     margin-bottom: 0em;
     font-size: 1.3em;
@@ -150,6 +179,7 @@ section_menu
 }
 .sous_titre_plat
 {
+    
     margin-top: 0.2em;
     margin-bottom: 0.3em;
     font-size: 1.25em;
@@ -158,14 +188,17 @@ section_menu
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 .prix_plat
 {
+
     margin-top: auto;
     margin-bottom: 0.35em;
     padding-right: 0.8em;
     padding-bottom: 0.3em;
     font-size: 1.2em;
     font-weight: 600;
+    background: #ff79da;
 }
 
 
