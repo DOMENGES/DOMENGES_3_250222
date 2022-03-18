@@ -1,4 +1,4 @@
-body_menu
+body
 {
     max-width: 768px;
     margin:0 auto;
@@ -36,15 +36,17 @@ header img
     height:16em;
     object-fit: cover;
 }
-section_menu
+.menu
 {
     position:absolute;
+    left: 0;
+    right:0;
     z-index:1;
     top:18em;
     display:flex;
     flex-direction: column;
     /*align-items: center;*/
-    width:100%;
+    /*width:100%;*/
     gap:2.5em;
     background-color: #f0eeee;
     /*background-clip: content-box;*/
@@ -118,9 +120,18 @@ section_menu
     gap:1.6em;
     opacity:0;
 }
+.delay1
+{
+    animation-delay: 1s;
+}
+.delay2
+{
+    animation-delay: 2s;
+}
 @keyframes plat {
     from{
         positon:absolute;
+        left:0em;
         right:0em;
     }
     to{
@@ -129,20 +140,9 @@ section_menu
         right:12em;
     }
 }
-@keyframes prix {
-    from{
-        position: absolute;
-        
-    }
-    to{
-        position:absolute;
-        
-        right:3em;
-    }
-}
+
 .plat_a, .plat_b, .plat_c
-{
-    position:relative;
+{   
     width:95%;
     height:4.5em;
     display: flex;
@@ -155,31 +155,36 @@ section_menu
 }
 .nom_plat
 {
-    /*width:70%;*/
-
     overflow: hidden;
     display: flex;
     flex-direction: column;
     padding-left: 0.6em;
-    background: #99e2d0;
-    
+      
+}
+.maybe
+{
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .maybe:hover
 {
-    animation: 3s plat, 3s prix;
+    animation: 3s plat;
 }
 
 .titre_plat
-{
-    
+{  
     margin-top: 0.3em;
     margin-bottom: 0em;
     font-size: 1.3em;
     font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .sous_titre_plat
-{
-    
+{   
     margin-top: 0.2em;
     margin-bottom: 0.3em;
     font-size: 1.25em;
@@ -191,14 +196,31 @@ section_menu
 
 .prix_plat
 {
-
     margin-top: auto;
     margin-bottom: 0.35em;
     padding-right: 0.8em;
     padding-bottom: 0.3em;
     font-size: 1.2em;
     font-weight: 600;
-    background: #ff79da;
+
+}
+@keyframes test{
+    from{
+        width:0em;
+    }
+    to{
+        width:5em;
+    }
+}
+.test
+{
+width:0em;
+background: #99e2d0;
+height:100%;
+}
+.plat_b:hover .test
+{
+    animation:test 3s forwards;
 }
 
 

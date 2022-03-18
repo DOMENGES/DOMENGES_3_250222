@@ -5,11 +5,34 @@ body
     margin:0 auto;
     font-family:"Roboto";
 }
+@keyframes rond{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity:0;
+        visibility: hidden;
+    }
+}
+.spinner
+{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width:100vw;
+    height:100vh;
+    background: white;
+    z-index:99;
+    animation:rond 0.5s forwards;
+    animation-delay: 2s;
 
-/*.spin
+}
+.spin
 {
     
-    width:91%;
+    width:27.5em;
     height:27.5em;
     border:solid 1em #ff79da;
     border-radius: 50%;
@@ -23,7 +46,7 @@ body
   }
   @-webkit-keyframes spinner {
     to { -webkit-transform: rotate(360deg); }
-  }*/
+  }
 header
 {
     display: flex;
@@ -142,7 +165,7 @@ h1
 }
 .intro_c:hover
 {
-    animation:rose 0.2s ease-in-out forwards;
+    animation:rose 0.5s ease-out forwards;
     
 }
 .intro_c h3
