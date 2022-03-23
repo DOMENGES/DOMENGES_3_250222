@@ -45,34 +45,52 @@ header img
     top:18em;
     display:flex;
     flex-direction: column;
-    /*align-items: center;*/
-    /*width:100%;*/
     gap:2.5em;
     background-color: #f0eeee;
-    /*background-clip: content-box;*/
     border-radius: 30px 30px 0px 0px;
     
-}
-.titre_restau
-{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 .titre_restau h1
 {
     font-family:"shrikhand";
-    font-size: 1.8em;
+    font-size: 2.1em;
+    padding-left: 2%;
     margin-bottom: 0em;
 }
-.titre_restau i
+.coeur_vide, .coeur_plein
 {
-    font-size: 1.7em;
-    padding-top: 0.7em;
+    position:absolute;
+    /*left: 85%;*/
+    right:10%;
+    top:0.9em;  
+    font-size: 2em;
+    cursor:pointer;
+}
+
+.coeur_vide i
+{
+    opacity: 0.4;
+    transition:opacity 0.5s;
+}
+.coeur_vide i:hover
+{   
+    opacity:0;
+}
+.coeur_plein i
+{
+    opacity: 0;
+    background: linear-gradient(#9356dc, #ff79da);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -webkit-border-image: 0;
+    transition:opacity 0.5s;
+}  
+.coeur_plein i:hover
+{
+    opacity:1;
 }
 .menu_3_choix
 {
-
     display: flex;
     flex-direction: column;
 }
@@ -148,31 +166,28 @@ header img
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 0.7em;
+    /*align-items: center;
+    padding-top: 0.7em;*/
     background-color: white;
     border-radius: 10px;
     box-shadow: 1px 1px 10px 10px #d3cfcf;
 }
+/*@keyframes nomplat {
+    from{
+        width:22em;
+    }
+    to{
+        widht:14em;
+    }
+}*/
 .nom_plat
 {
     overflow: hidden;
     display: flex;
     flex-direction: column;
     padding-left: 0.6em;
-      
+    width:22em;
 }
-.maybe
-{
-    position:relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.maybe:hover
-{
-    animation: 3s plat;
-}
-
 .titre_plat
 {  
     margin-top: 0.3em;
@@ -193,36 +208,61 @@ header img
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
 .prix_plat
 {
+    width:2em;
     margin-top: auto;
     margin-bottom: 0.35em;
-    padding-right: 0.8em;
     padding-bottom: 0.3em;
     font-size: 1.2em;
     font-weight: 600;
-
 }
-@keyframes test{
+@keyframes coche{
     from{
-        width:0em;
+        width: 0em;
     }
     to{
         width:5em;
     }
 }
-.test
+.coche
 {
 width:0em;
 background: #99e2d0;
-height:100%;
-}
-.plat_b:hover .test
-{
-    animation:test 3s forwards;
-}
+border-radius: 0px 10px 10px 0px;
 
+}
+.plat_a:hover .coche,.plat_b:hover .coche, .plat_c:hover .coche
+{
+    animation:coche 1s linear forwards;
+}
+@keyframes tournante {
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.coche_tournante i
+{
+    font-size: 2em;
+    color:#99e2d0;
+    margin-top:0.25em;
+    margin-left:0.35em;
+    padding:0.35em;
+    background-color: white;
+    border-radius: 50%;
+    transform:rotate(0deg);
+}
+/*.plat_b:hover .coche_tournante
+{
+    animation:coche 2s forwards;
+}*/
+.plat_b:hover .coche_tournante i, .plat_c:hover .coche_tournante i
+{
+    animation:tournante 2s forwards;
+}
 
 button
 {

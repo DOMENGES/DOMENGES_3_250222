@@ -26,9 +26,8 @@ body
     background: white;
     z-index:99;
     animation:rond 0.5s forwards;
-    animation-delay: 2s;
-
-}
+    animation-delay: 1s;
+}/*élément rond avec animation "disparition"*/
 .spin
 {
     
@@ -114,17 +113,7 @@ h1
     padding-right: 1.3em;
     text-align: center;
 }
-/*@keyframes rose 
-{
-    from{
-        background: linear-gradient(#ff79da,#9356dc);
-        box-shadow: 5px 5px 10px 3px #d3cfcf;
-    }
-    to{
-        background: linear-gradient(#fac3ea,#ba92eb);
-        box-shadow: 5px 5px 30px 3px #7c7979;
-    }
-}*/
+
 @keyframes rose 
 {
     0%{
@@ -144,14 +133,14 @@ h1
         background: linear-gradient(rgb(252, 174, 230),rgb(214, 181, 252));
         box-shadow: 5px 5px 10px 3px rgb(190, 171, 171);
     }
-    70%{
+    100%{
         background: linear-gradient(rgb(252, 195, 236),rgb(209, 173, 250));
         box-shadow: 5px 5px 10px 3px rgb(126, 110, 110);
     }
-    100%{
+    /*100%{
         background: linear-gradient(rgb(252, 206, 238),rgb(231, 216, 250));
         box-shadow: 5px 5px 10px 3px rgb(75, 57, 57, 1);
-    }
+    }*/
 }
 .intro_c
 {
