@@ -255,11 +255,7 @@ border-radius: 0px 10px 10px 0px;
     border-radius: 50%;
     transform:rotate(0deg);
 }
-/*.plat_b:hover .coche_tournante
-{
-    animation:coche 2s forwards;
-}*/
-.plat_b:hover .coche_tournante i, .plat_c:hover .coche_tournante i
+.plat_a:hover .coche_tournante i, .plat_b:hover .coche_tournante i, .plat_c:hover .coche_tournante i
 {
     animation:tournante 2s forwards;
 }
