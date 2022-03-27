@@ -17,28 +17,27 @@ body
 .spinner
 {
     position:fixed;
-    top:0;
+    top:0em;
     bottom:0;
-    left:0;
+    left:0em;
     right:0;
     width:100vw;
     height:100vh;
     background: white;
     z-index:99;
-    animation:rond 0.8s forwards;
-    animation-delay: 1s;
+    animation:rond 1s forwards;
+    animation-delay: 3s;
 }/*élément rond avec animation "disparition"*/
 .spin
-{
-    
-    width:27.5em;
-    height:27.5em;
+{ 
+    width:21.5em;
+    height:21.5em;
+ 
     border:solid 1em #ff79da;
     border-radius: 50%;
     border-bottom-color: #9356dc;
-    animation:1.5s linear infinite spinner;
-    -webkit-animation: 1.5s ease-in-out infinite spinner;
-    
+    animation:2s linear infinite spinner;
+    -webkit-animation: 2s ease-in-out infinite spinner;  
 }
 @keyframes spinner {
     to { -webkit-transform: rotate(360deg); }
@@ -121,21 +120,21 @@ h1
         box-shadow: 5px 5px 10px 3px rgba(211, 207, 207, 1);
     }
     20%{
-        background: linear-gradient(rgb(221, 152, 200),rgb(181, 121, 255));
+        background: linear-gradient(rgb(255, 135, 219),rgb(181, 121, 255));
         box-shadow: 5px 5px 10px 3px rgb(192, 178, 178);
     }
     35%{
-        background: linear-gradient(rgb(253, 190, 233),rgb(188, 134, 253));
-        box-shadow: 5px 5px 10px 3px rgb(179, 164, 164);
+        background: linear-gradient(rgb(250, 155, 220),rgb(188, 134, 253));
+        box-shadow: 5px 5px 10px 3px rgb(177, 158, 158);
     }
     
     50%{
-        background: linear-gradient(rgb(252, 174, 230),rgb(214, 181, 252));
-        box-shadow: 5px 5px 10px 3px rgb(190, 171, 171);
+        background: linear-gradient(rgb(240, 177, 222),rgb(214, 181, 252));
+        box-shadow: 5px 5px 10px 3px rgb(146, 130, 130);
     }
     100%{
         background: linear-gradient(rgb(252, 195, 236),rgb(209, 173, 250));
-        box-shadow: 5px 5px 10px 3px rgb(126, 110, 110);
+        box-shadow: 5px 5px 10px 3px rgb(116, 103, 103);
     }
 }
 .intro_c
@@ -164,59 +163,54 @@ h1
     padding-top:0.8em ;
     padding-bottom: 0.8em;
 }
+.fonctionnement
+{
+    height:23em;
+}
 .titre_fonction
 {
     margin-left: 1.5em;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 }
 .etapes_1_2_3
 {
+    width:95%;
+ 
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:7em;
-    /*justify-content: start;*/
+    gap:2em;
 }
 .etape
 {
-    position:relative;
     width:100%;
+    height:4em;
     display: flex;
     align-items: center;
-    /*margin-left: 1em;
-    margin-right: 1em;*/
-   
+    margin-left: 1.1em;
+    position:relative;
+}
 
-}
-.numero
-{
-    position:absolute;
-    z-index:1;
-    margin-left: 1em;
-    padding:0.5em;
-    padding-left: 0.7em;
-    padding-right: 0.7em;
-    border-radius: 50%;
-    background-color: #9356dc;
-    color:white;
-    font-size: 1.1em;
-    font-weight: 900;
-}
 .etape i
 {
-    font-size: 2em;
+    font-size: 1.5em;
+   margin-left: 0.5em;
 }
 .text_etape_noire
-{
+{ 
     position:absolute;
-    width:70%;
+    z-index:1;
+    width:80%;
+    height:3.5em;   
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
-    padding-left: 2em;
+    justify-content: start;
+    left: 1em;
+    padding-left: 1.5em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    padding-right: 2em;
-    left: 2em;
+    padding-right: 1em;
     background-color: #F2F2F2;
     border-radius: 20px;
     box-shadow:  3px 3px 8px #d3cfcf;
@@ -230,14 +224,18 @@ h1
 .text_etape_violette
 {
     position:absolute;
-    width:70%;
+    z-index:1;
+    width:80%;
+    height:3.5em;   
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
-    padding-left: 2em;
+    justify-content: start;
+    left: 1em;
+    padding-left: 1.5em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    padding-right: 2em;
-    left: 2em;
+    padding-right: 1em;
     background-color: #ec47ad;
     border-radius: 20px;
     box-shadow:  3px 3px 8px #d3cfcf;
@@ -250,15 +248,32 @@ h1
 }
 .text_etape_violette:hover
 {
+  
     opacity:1;
 }
 .text_etape_noire h3, .text_etape_violette h3
 {
-    margin-left:1.5em;
+    margin-left:1.3em;
+}
+.numero
+{
+    position:absolute;
+    z-index:2;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:10%;
+    height: 2.1em;
+    left:-1em;
+    border-radius: 100%;
+    background-color: #9356dc;
+    color:white;
+    font-size: 1em;
+    font-weight: 900;
 }
 .restaurants
 {
-    margin-top: 6em;
+    margin-top: 1.5em;
     background-color:#f2f2f2 ;
 }
 .titre_restaurants h2
@@ -307,13 +322,7 @@ h1
     width:25%;
     z-index:1;
     left: 70%;
-    /*right: 10%;*/
     text-align: center;
-    /*top: 1em;*/
-    /*padding-left:0.8em;
-    padding-right: 0.8em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;*/
     background-color:#99E2D0;
     color:#04b387;
     border-radius: 5px;
@@ -381,24 +390,19 @@ h1
 {
     opacity:1;
 }
-@media screen and (min-width:768px)and(max-width:992px)
+@media screen and (min-width:768px) and (max-width:992px)
 {
    body
    {
-       width: 100%;
+       max-width: 992px;
    }
    .formulaire i
     {
         font-size: 1.8em;
-       
     }
     input
     {
-        width: 7.5em;
         font-size: 1.2em;
-        font-weight: 700;
-        border:none;
-        background-color: #d3cfcf;
     }
     .intro_b h3
     {
@@ -406,31 +410,23 @@ h1
     }
     .intro_c h3
     {
-    
         font-size: 1.5em;
-        /*font-weight: 500;
-        margin:0;*/
         padding-left:1.3em;
         padding-right:1.3em;
-        /*padding-top:0.8em ;
-        padding-bottom: 0.8em;*/
     }
-    /*.etapes_1_2_3
+    .etapes_1_2_3
     {
-        /*display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap:7em;*/
-    /*justify-content: start;
-        position:relative;
-        align-items: center;
+        justify-content: center;
 
-    }*/
-    
+    }
+   .etape
+   {
+       width:90%;
+   }
     .text_etape_noire, .text_etape_violette
     {
         justify-content: center;
         font-size: 1.2em;
-        width: 100%;
+
     }  
 }

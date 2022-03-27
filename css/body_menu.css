@@ -4,10 +4,10 @@ body
     margin:0 auto;
     font-family:"Roboto";
 }
+
 header
 {
     display: flex;
-    /*justify-content: center;*/
     align-items: center;
     padding-top: 1.5em;
     padding-bottom: 1em;  
@@ -25,46 +25,56 @@ header img
 }
 .photo
 {
-    position:relative;
-    z-index: -1;
-    align-items: center;
-
+    position:absolute;
+    z-index:-1;
 }
+
 .photo img
 {
     width:100%;
     height:16em;
     object-fit: cover;
+
 }
 .menu
 {
-    position:absolute;
-    left: 0;
-    right:0;
-    z-index:1;
-    top:18em;
+    position:relative;
+    width:100%;
+    height:80.5em;
+    margin-top: 14em;
     display:flex;
     flex-direction: column;
-    gap:2.5em;
+    
     background-color: #f0eeee;
     border-radius: 30px 30px 0px 0px;
     
 }
+.titre_restau
+{
+    
+    display:flex;
+    align-items: center;
+    height:4em;
+    margin-left: 1em;
+    margin-right: 1em;
+
+}
 .titre_restau h1
 {
     font-family:"shrikhand";
-    font-size: 2.1em;
-    padding-left: 2%;
-    margin-bottom: 0em;
+    font-size: 1.8em;
+    
 }
 .coeur_vide, .coeur_plein
 {
-    position:absolute;
-    /*left: 85%;*/
-    right:10%;
-    top:0.9em;  
-    font-size: 2em;
+    position: absolute;
+    /*width:7%;*/
+    /*height:2.6em;*/
+    font-size: 1.5em;
+    right:1.5em;
+    /*top:2.2em;*/
     cursor:pointer;
+    /*background-color: greenyellow;*/
 }
 
 .coeur_vide i
@@ -93,17 +103,21 @@ header img
 {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2em; 
 }
+
 .titre_menu
 {
     display: flex;
     flex-direction: column;
+    height:4em;
+    margin-top: 0em;
 }
+
 .titre_menu h2
 {
     font-size: 1.2em;
     font-weight: 300;
-    margin-top: 0em;
     margin-bottom: 0em;
     padding-left: 0.5em;
 }
@@ -114,6 +128,7 @@ header img
     background-color: #99e2d0;
     margin-top: 0em;
     margin-left: 0.5em;
+    
 }
 @keyframes opacite 
 {
@@ -135,8 +150,9 @@ header img
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:1.6em;
-    opacity:0;
+    gap:1.8em;
+   opacity:0;
+ 
 }
 .delay1
 {
@@ -277,7 +293,8 @@ button
     background-clip: border-box;
     background: linear-gradient(#ff79da,#9356dc);
     box-shadow: 5px 5px 10px 3px #d3cfcf;
-    margin-bottom: 2em;
+
+    margin-top: 0.5em;
     transition-property: background, box-shadow;
     transition-duration: 1s;
     transition-timing-function: ease-in-out
@@ -286,11 +303,5 @@ button:hover
 {
     background: linear-gradient(#fac3ea,#ba92eb);
     box-shadow: 5px 5px 30px 3px #7c7979;
-}
-footer
-{
-    position:relative;
-    z-index:2;
-    top:83em;
 }
 
