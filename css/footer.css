@@ -1,11 +1,20 @@
 footer
 {
-    
+    max-width: 768px;
+    margin:0 auto;
+    font-family:"Roboto";
     background-color: black;
     color:white;
     padding-left: 1.5em;
     padding-top: 1em;
     padding-bottom: 2em;
+}
+.logo
+{
+    font-family: "shrikhand";
+    font-size: 1.5em;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
 }
 
 footer h4
@@ -15,13 +24,7 @@ footer h4
     margin-top: 0em;
     margin-bottom: 0em;
 }
-footer img
-{
-    width:32%;
-    height: 1.5em;
-    filter: invert(100%);
-    -webkit-filter: invert(100%); 
-}
+
 .foot_1, .foot_2, .foot_3, .foot_4
 {
     height:2.5em;
@@ -43,8 +46,75 @@ footer img
 {
     margin-top: 0.8em;
 }
+
 .foot_4 a
 {
     text-decoration: none;
     color:white;
+    
+}
+@media screen and (min-width:768px) and (max-width:992px)
+{
+    footer
+    {
+        max-width: 992px;
+    }
+    .logo
+    {
+        /*font-family: "shrikhand";*/
+        font-size: 2.2em;
+        /*margin-top: 0.8em;
+        margin-bottom: 0.8em;*/
+    }
+   .menu_footer
+   {
+       display:flex;
+       flex-direction: row;
+    
+       margin:auto;
+   }
+   .menu_footer h4
+   {
+       font-size:1.5em;
+   }
+   .foot_1_2, .foot_3_4
+   {
+       width:50%;
+   }
+   .foot_3
+    {
+        margin-top: 0em;
+    }
+   .foot_3_4
+   {
+        display:flex;
+        flex-direction: column;
+        
+   }
+  
+}
+@media screen and (min-width:992px) and (max-width:1300px)
+{
+    footer
+    {
+        max-width: 1300px;
+        height:10em;
+    }
+    footer p
+    {
+     text-align: center;
+    }
+    .logo
+    {
+        font-size: 2.8em;
+    }
+    .menu_footer
+    {
+        margin-left: 6em;
+        margin-right: 6em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
 }
