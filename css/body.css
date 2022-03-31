@@ -47,18 +47,20 @@ body
   }
 header
 {
+   
     display: flex;
     justify-content: center;
-    padding-top: 1.5em;
-    padding-bottom: 1em;  
+    height:6.3em;
+    align-items: center;  
 }
 header img
 {
-    width:50%;
+    height:3em;
 }
 .formulaire
 {
     width:100%;
+    height:3.1em;
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -73,7 +75,7 @@ header img
 input
 {
     width: 7.5em;
-    font-size: 0.95em;
+    font-size: 1em;
     font-weight: 700;
     border:none;
     background-color: #d3cfcf;
@@ -92,12 +94,14 @@ input:focus
     flex-direction: column;
     align-items: center;
     background-color: #F2F2F2;
+    height:16em;
 }
 h1
 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     margin-bottom: 0.5em;
 }
+
 
 .intro_b h3
 {
@@ -165,7 +169,7 @@ h1
 }
 .fonctionnement
 {
-    height:23em;
+    height:21.3em;
 }
 .titre_fonction
 {
@@ -283,11 +287,12 @@ h1
 {
     margin-top: 1.5em;
     background-color:#f2f2f2 ;
+    height:72em;
 }
 .titre_restaurants h2
 {
     padding-left: 1.2em;
-    padding-top: 2em;
+    padding-top: 1em;
 }
 .restau_1_2_3_4
 {
@@ -403,15 +408,29 @@ h1
    body
    {
        max-width: 992px;
+       margin:0 auto;
    }
    .spin
     { 
     width:48em;
     height:48em;
     }
+    header
+    {
+        height:8em;
+    }
+    header img
+    {
+    
+        height:4.5em;
+    }
+    .formulaire
+    {
+        height:4em;
+    }
    .formulaire i
     {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
     input
     {
@@ -461,13 +480,18 @@ h1
     {
         width:9%;
         height: 2.5em;
-        left:-1.5em;
+        left:-1.3em;
         font-size: 1.5em;
     }
     .etape i
     {
-        font-size: 2em;
+        font-size: 2.2em;
         margin-left: 1.2em;
+    }
+    .restaurants
+    {
+        margin-top: 1.5em;
+        height:48em;
     }
     .restau_1_2_3_4
     {
@@ -475,7 +499,6 @@ h1
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        height:40em;
         width:98%;
         margin:auto;
     }
@@ -483,11 +506,6 @@ h1
     {
         width:45%;
         height:18em;
-        /*display:flex;
-        flex-direction: column;
-        background-color: white;
-        border-radius: 10px 10px 10px 10px;
-        box-shadow:  3px 3px 8px #d3cfcf;*/
         margin-left: 1.5em;
         margin-bottom: 2em;
     }
@@ -529,6 +547,7 @@ h1
     body
     {
         max-width:1300px;
+        margin:0 auto;
     }
     .spin
     { 
@@ -538,22 +557,44 @@ h1
     border:solid 1.5em #ff79da;
     
     }
-    input
+    header
     {
-        width: 8em;
-        font-size:1.5em;
-        font-weight: 700;
-        /*border:none;
+        height:11em;
+    }
+    header img
+    {
+        
+        height:6em;
+      
+    }
+    .formulaire
+    {
+        /*width:100%;*/
+        height:5em;
+        /*display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         background-color: #d3cfcf;*/
+        /*padding-left: 2em;*/
     }
     .formulaire i
     {
-       font-size: 1.5em; 
+        font-size: 2.5em;
     }
-    .formulaire form input
+    input
     {
-        font-size: 5em;
+        /*width: 7.5em;*/
+        font-size: 1.5em;
+        /*font-weight: 700;
+        border:none;
+        background-color: #d3cfcf;*/
     }
+    .presentation
+    {
+        height:17.5em;
+    }
+
     h1
     {
         font-size: 2.1em;
@@ -571,7 +612,7 @@ h1
     .intro_c h3
     {
         /*color:white;*/
-        font-size: 2em;
+        font-size: 1.8em;
         font-weight: 600;
         /*margin:0;*/
         padding-left:1.8em;
@@ -579,30 +620,63 @@ h1
         padding-top:0.7em ;
         padding-bottom: 0.7em;
     }
+    .fonctionnement 
+    {
+        height:15em;
+    }
+    
     .titre_fonction h2, .titre_restaurants h2
     {
         font-size: 1.9em;
     }
-    .intro_c h3
+    .titre_fonction
     {
-        font-size: 1.8em;
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+    }
+    
+    .etape
+    {
+        width:32%;
+    }
+    .etape i
+    {
+        font-size: 1.6em;
+        margin-left: 0em;
+        
+    }
+    .etape h3
+    {
+        font-size: 1.5em;
+        margin-left:0.8em;
+        
     }
     .etapes_1_2_3
     {
         width:98%;
-    
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin:auto;
         gap:0.5em;
     }
-    .fonctionnement
+    .text_etape_noire, .text_etape_violette
+   { 
+       height:5em;   
+       left: 0em;
+   }
+    .numero
     {
-        height:10em;
+        width:16%;
+        height: 2em;
+        left:5em;
+        top: -1.2em;
+        font-size: 1.5em;
     }
+    
     .restaurants
     {
-        heigh:10em;
+        height:26em;
     }
     .restau_1_2_3_4
     {
@@ -627,24 +701,20 @@ h1
     }
     .photo_restau h3
     {
-        /*position:absolute;*/
-        width:34%;
-       /* z-index:1;*/
-        left:52%;
+        width:38%;
+        
+        left:50%;
         font-size: 1.4em;
-        padding-left: 0.65em;
-        padding-right: 0.65em;
-        /*text-align: center;
-        background-color:#99E2D0;
-        color:#04b387;
-        border-radius: 5px;*/
+        padding: 0.3em;
+        
     }
     .coeur_vide, .coeur_plein
     {
         /*position:absolute;*/
-        left: 80%;  
-        /*font-size: 2em;
-        cursor:pointer;*/
+        left:80%;
+        top:50%; 
+        font-size: 1.6em;
+        /*cursor:pointer;*/
     }
     .titre_quartier
     {
@@ -653,14 +723,5 @@ h1
         padding-left:0.5em;
         
     }
-    .etape i
-    {
-        font-size: 1.6em;
-    margin-left: 0.2em;
-    }
-    .etape h3
-    {
-        font-size: 1.4em;
-        margin-left:0.5em ;
-    }
+   
 }
