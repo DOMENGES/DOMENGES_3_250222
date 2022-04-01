@@ -26,18 +26,18 @@ body
     background: white;
     z-index:99;
     animation:rond 1s forwards;
-    animation-delay: 3s;
+    animation-delay: 1s;
 }/*élément rond avec animation "disparition"*/
 .spin
 { 
     width:21.5em;
     height:21.5em;
- 
+    margin:auto;
     border:solid 1em #ff79da;
     border-radius: 50%;
     border-bottom-color: #9356dc;
-    animation:2s linear infinite spinner;
-    -webkit-animation: 2s ease-in-out infinite spinner;  
+    animation:1s linear infinite spinner;
+    -webkit-animation: 1s linear infinite spinner;  
 }
 @keyframes spinner {
     to { -webkit-transform: rotate(360deg); }
@@ -405,8 +405,8 @@ h1
 }
 footer
 {
-    max-width: 768px;
-    margin:0 auto;
+    /*max-width: 768px;
+    margin:0 auto;*/
     font-family:"Roboto";
     background-color: black;
     color:white;
@@ -468,8 +468,9 @@ footer h4
    }
    .spin
     { 
-    width:48em;
-    height:48em;
+    width:29em;
+    height:29em;
+   
     }
     header
     {
@@ -597,10 +598,10 @@ footer h4
         color:#04b387;
         border-radius: 5px;*/
     }
-    footer
+    /*footer
     {
         max-width: 992px;
-    }
+    }*/
     .logo
     {
         /*font-family: "shrikhand";*/
@@ -634,21 +635,14 @@ footer h4
         
    }
 }
-@media screen and (min-width:992px) and (max-width:1300px)
+@media screen and (min-width:992px)
 {
     body
     {
         max-width:1300px;
         margin:0 auto;
     }
-    .spin
-    { 
-        width:65.5em;
-        height:65.5em;
- 
-    border:solid 1.5em #ff79da;
     
-    }
     header
     {
         height:11em;
@@ -807,6 +801,7 @@ footer h4
         top:50%; 
         font-size: 1.6em;
         /*cursor:pointer;*/
+        transform:translateY(-50%);
     }
     .titre_quartier
     {
@@ -817,7 +812,7 @@ footer h4
     }
     footer
     {
-        max-width: 1300px;
+        /*max-width: 1300px;*/
         height:14em;
     }
     footer p
