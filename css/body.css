@@ -25,8 +25,11 @@ body
     height:100vh;
     background: white;
     z-index:99;
-    animation:rond 1s forwards;
-    animation-delay: 1s;
+    animation:rond 1.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }/*élément rond avec animation "disparition"*/
 .spin
 { 
@@ -36,8 +39,8 @@ body
     border:solid 1em #ff79da;
     border-radius: 50%;
     border-bottom-color: #9356dc;
-    animation:1s linear infinite spinner;
-    -webkit-animation: 1s linear infinite spinner;  
+    animation:0.3s linear infinite  spinner;
+    -webkit-animation: 0.5s linear infinite spinner;  
 }
 @keyframes spinner {
     to { -webkit-transform: rotate(360deg); }
@@ -47,7 +50,6 @@ body
   }
 header
 {
-   
     display: flex;
     justify-content: center;
     height:6.3em;
@@ -66,7 +68,6 @@ header img
     align-items: center;
     justify-content: center;
     background-color: #d3cfcf;
-    /*padding-left: 2em;*/
 }
 .formulaire i
 {
@@ -101,8 +102,6 @@ h1
     font-size: 1.6em;
     margin-bottom: 0.5em;
 }
-
-
 .intro_b h3
 {
     font-size: 1.2em;
@@ -116,7 +115,6 @@ h1
     padding-right: 1.3em;
     text-align: center;
 }
-
 @keyframes rose 
 {
     0%{
@@ -148,13 +146,11 @@ h1
     margin-bottom: 2.7em;
     background-clip: border-box;
     background: linear-gradient(rgb(255, 122, 217, 1),rgb(147, 86, 220, 1));
-    box-shadow: 5px 5px 10px 3px rgb(211, 207, 207, 1);
-     
+    box-shadow: 5px 5px 10px 3px rgb(211, 207, 207, 1);    
 }
 .intro_c:hover
 {
-    animation:rose 0.5s ease-out forwards;
-    
+    animation:rose 0.5s ease-out forwards; 
 }
 .intro_c h3
 {
@@ -274,7 +270,7 @@ h1
     display:flex;
     justify-content: center;
     align-items: center;
-    width:10%;
+    width:2.1em;
     height: 2.1em;
     left:-1em;
     border-radius: 100%;
@@ -315,7 +311,6 @@ h1
     display: flex;
     flex-direction: row;
     align-items: center;
-    /*justify-content: space-between;*/
     padding-right: 2.3em;
 }
 .photo_restau img
@@ -354,13 +349,11 @@ h1
     display: flex;
     flex-direction: column;
     padding-left: 1em;
-    
 }
 .titre_quartier h2
 {
    margin-bottom: 0em;
    font-size: 1.3em;
-
 }
 .titre_quartier h3
 {
@@ -380,7 +373,6 @@ h1
     font-size: 2em;
     cursor:pointer;
 }
-
 .coeur_vide i
 {
     opacity: 0.5;
@@ -405,8 +397,6 @@ h1
 }
 footer
 {
-    /*max-width: 768px;
-    margin:0 auto;*/
     font-family:"Roboto";
     background-color: black;
     color:white;
@@ -422,7 +412,6 @@ footer
     margin-top: 0.8em;
     margin-bottom: 0.8em;
 }
-
 footer h4
 {
     font-size: 1.2em;
@@ -457,7 +446,6 @@ footer h4
 {
     text-decoration: none;
     color:white;
-    
 }
 @media screen and (min-width:768px) and (max-width:992px)
 {
@@ -535,7 +523,7 @@ footer h4
    }
    .numero
     {
-        width:9%;
+        width:2.5em;
         height: 2.5em;
         left:-1.3em;
         font-size: 1.5em;
@@ -568,52 +556,32 @@ footer h4
     }
     .titre_quartier h2
     {
-    /*margin-bottom: 0em;*/
     font-size: 1.6em;
-
     }
     .titre_quartier h3
     {
         font-weight: 300;
         font-size: 1.3em;
-        /*margin-top: 0.2em;*/
     }
     .photo_restau img
     {
-        /*width:100%;*/
         height:12em;
-        /*object-fit: cover;
-        border-radius: 10px 10px 0px 0px;*/
     }
     .photo_restau h3
     {
-        /*position:absolute;*/
         width:30%;
-        /*z-index:1;*/
         left: 60%;
         font-size: 1.5em;
         padding:0.5em;
-        /*text-align: center;
-        background-color:#99E2D0;
-        color:#04b387;
-        border-radius: 5px;*/
     }
-    /*footer
-    {
-        max-width: 992px;
-    }*/
     .logo
     {
-        /*font-family: "shrikhand";*/
         font-size: 2.2em;
-        /*margin-top: 0.8em;
-        margin-bottom: 0.8em;*/
     }
    .menu_footer
    {
        display:flex;
        flex-direction: row;
-    
        margin:auto;
    }
    .menu_footer h4
@@ -635,7 +603,7 @@ footer h4
         
    }
 }
-@media screen and (min-width:992px)
+@media screen and (min-width:993px)
 {
     body
     {
@@ -655,14 +623,7 @@ footer h4
     }
     .formulaire
     {
-        /*width:100%;*/
         height:5em;
-        /*display:flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        background-color: #d3cfcf;*/
-        /*padding-left: 2em;*/
     }
     .formulaire i
     {
@@ -670,11 +631,7 @@ footer h4
     }
     input
     {
-        /*width: 7.5em;*/
         font-size: 1.5em;
-        /*font-weight: 700;
-        border:none;
-        background-color: #d3cfcf;*/
     }
     .presentation
     {
@@ -684,23 +641,18 @@ footer h4
     h1
     {
         font-size: 2.1em;
-        /*margin-bottom: 0.5em;*/
     }
 
     .intro_b h3
     {
         font-size: 1.5em;
         font-weight: 400;
-        /*margin-top: 0em;
-        margin-bottom: 0em;*/
     }
 
     .intro_c h3
     {
-        /*color:white;*/
         font-size: 1.8em;
         font-weight: 600;
-        /*margin:0;*/
         padding-left:1.8em;
         padding-right:1.8em ;
         padding-top:0.7em ;
@@ -753,9 +705,10 @@ footer h4
    }
     .numero
     {
-        width:16%;
+        width:2em;
         height: 2em;
-        left:5em;
+        left:50%;
+        transform:translateX(-50%);
         top: -1.2em;
         font-size: 1.5em;
     }
@@ -796,23 +749,18 @@ footer h4
     }
     .coeur_vide, .coeur_plein
     {
-        /*position:absolute;*/
         left:80%;
         top:50%; 
         font-size: 1.6em;
-        /*cursor:pointer;*/
         transform:translateY(-50%);
     }
     .titre_quartier
     {
-        /*display: flex;
-        flex-direction: column;*/
         padding-left:0.5em;
         
     }
     footer
     {
-        /*max-width: 1300px;*/
         height:14em;
     }
     footer p

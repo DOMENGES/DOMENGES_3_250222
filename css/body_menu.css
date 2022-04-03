@@ -27,8 +27,6 @@ header img
 
 .photo
 {
-    position:absolute;
-    z-index:-1;
     width:100%;
 }
 
@@ -41,10 +39,9 @@ header img
 .menu
 {
     position:relative;
-    width:100%;
-    height:75em;
-    top: 14.5em;
+    padding-bottom: 2em;
     z-index:1;
+    margin-top: -2em;
     display:flex;
     flex-direction: column;
     background-color: #f0eeee;
@@ -99,7 +96,6 @@ header img
 }
 .menu_3_choix
 {
-    height:20em;
     display: flex;
     flex-direction: column;
     margin-bottom: 2em; 
@@ -127,7 +123,6 @@ header img
     background-color: #99e2d0;
     margin-top: 0em;
     margin-left: 0.5em;
-    
 }
 @keyframes opacite 
 {
@@ -182,15 +177,13 @@ header img
     flex-direction: column;
     padding-left: 0.6em;
     width:19em;
-    height:4.5em;
-   
+    /*height:4.5em;*/
 }
 
 .titre_plat
 {  
     margin-top: 0.4em;
     margin-bottom: 0em;
-    
     font-size: 1.1em;
     font-weight: 600;
     white-space: nowrap;
@@ -221,12 +214,10 @@ header img
 @keyframes coche{
     from{
         width: 0em;
-        
         opacity:0;
     }
     to{
         width:5em;
-        
         opacity:1;
     }
 }
@@ -273,7 +264,6 @@ border-radius: 0px 10px 10px 0px;
 
 button
 {
-    /*width:50%;*/
     margin:auto;
     color:white;
     font-size: 1.1em;
@@ -283,12 +273,10 @@ button
     padding-left: 2em;
     padding-right: 2em;
     border-radius: 30px;
-    /*border-color:transparent;*/
     border-width: 0em;
     background-clip: border-box;
     background: linear-gradient(#ff79da,#9356dc);
     box-shadow: 5px 5px 10px 3px #d3cfcf;
-
     margin-top: 0.5em;
     transition-property: background, box-shadow;
     transition-duration: 1s;
@@ -303,8 +291,6 @@ button:hover
 footer
 {
     max-width: 768px;
-    margin-top: 10em;
-    /*font-family:"Roboto";*/
     background-color: black;
     color:white;
     height:14em;
@@ -365,8 +351,7 @@ footer h4
     }
     header
     {
-        /*display: flex;
-        align-items: center;*/
+        display:flex;
         justify-content: center;
         padding-top: 1.6em;
         padding-bottom: 1.6em;
@@ -375,81 +360,47 @@ footer h4
     header i
     {
         font-size: 1.7em;
-        /*margin-right: 1.5em;
-        margin-left: 1.2em;
-        color:black;*/
     }
     header img
     {
         width:50%;
     }
     .photo img
-    {
-        
-        height:22em;
-        
+    {       
+        height:22em;  
     }
-    .menu
-    {
-        /*position:relative;
-        width:100%;*/
-        height:120em;
-        top: 20.5em;
-        /*z-index:1;
-        display:flex;
-        flex-direction: column;
-        background-color: #f0eeee;
-        border-radius: 30px 30px 0px 0px;*/
-        
-    }
-   
     .titre_restau
     {
-        
-        /*display:flex;
-        align-items: center;*/
         height:5em;
         margin-left: 3em;
         margin-right: 3em;
         padding-top: 1.7em;
-
     }
     .titre_restau h1
-    {
-        
+    { 
         font-size: 3.5em;
-        
     }
     .coeur_vide, .coeur_plein
     {
-        /*position: absolute;*/
         font-size: 2.3em;
         right:1.5em;
-        /*cursor:pointer;*/
     }
     .menu_3_choix
     {
-        height:32em;
-        /*display: flex;
-        flex-direction: column;*/
+        flex-direction: column;
         margin-left: 3em;
         margin-right: 3em;
         margin-bottom: 2em; 
     }
     .titre_menu
     {
-        /*display: flex;
-        flex-direction: column;*/
         height:6em;
-       
-        /*margin-top: 0em;*/
     }
 
     .titre_menu h2
     {
         font-size: 1.5em;
         font-weight: 400;
-        /*margin-bottom: 0em;*/
         padding-left: 0em;
     }
     .titre_menu p
@@ -470,13 +421,6 @@ footer h4
         width:100%;
         height:7em;
         align-items: center;
-        /*display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 1px 1px 10px 10px #d3cfcf;
-        cursor: -webkit-grab; cursor: grab;*/
     }
     .nom_plat
     {
@@ -490,12 +434,7 @@ footer h4
     {  
         margin-top: 0em;
         margin-bottom: 0em;
-        
         font-size: 2em;
-        /*font-weight: 600;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;*/
     }
     .sous_titre_plat
     {   
@@ -503,14 +442,9 @@ footer h4
         margin-bottom: 0em;
         font-size: 1.5em;
         font-weight: 400;
-        /*white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;*/
     }
     .prix_plat
     {
-        /*width:4em;*/
-        /*margin-top: auto;*/
         margin-right: 1.5em;
         margin-left: 1.2em;
         margin-bottom: 0em;
@@ -521,13 +455,6 @@ footer h4
     .coche
 {
     height:7em;
-/*width:0em;
-display: flex;
-justify-content: center;
-align-items: center;
-opacity:0;
-background: #99e2d0;
-border-radius: 0px 10px 10px 0px;*/
 
 }
   
@@ -546,14 +473,7 @@ border-radius: 0px 10px 10px 0px;*/
     .coche_tournante i
     {
         font-size: 2.3em;
-        /*color:#99e2d0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding:0.35em;
-        background-color: white;
-        border-radius: 50%;
-        transform:rotate(0deg);*/
+
     }
     button
     {
@@ -568,22 +488,14 @@ border-radius: 0px 10px 10px 0px;*/
     }
     .logo
     {
-        /*font-family: "shrikhand";*/
         font-size: 2.2em;
-        /*margin-top: 0.8em;
-        margin-bottom: 0.8em;*/
     }
-    footer
-    {
-        margin-top: 20em;
-        height:12em;
-    }
+    
    .menu_footer
    {
        display:flex;
        flex-direction: row;
        justify-content: space-between;
-       /*margin-left:1.5em;*/
        margin-right: 1.5em;
    }
    .menu_footer h4
@@ -606,7 +518,7 @@ border-radius: 0px 10px 10px 0px;*/
         
    }
 }
-@media screen and (min-width:992px) and (max-width:1300px)
+@media screen and (min-width:992px)
 {
     body
     {
@@ -615,19 +527,13 @@ border-radius: 0px 10px 10px 0px;*/
     }
     header
     {
-        /*display: flex;
-        align-items: center;
-        padding-top: 1.5em;
-        padding-bottom: 1em;*/
+
         justify-content: center;
         height:7em;  
     }
     header i
     {
         font-size: 2.5em;
-        /*margin-right: 1.5em;
-        margin-left: 1.2em;
-        color:black;*/
     }
     header img
     {
@@ -635,23 +541,12 @@ border-radius: 0px 10px 10px 0px;*/
     }
     .photo img
     {
-        /*width:100%;*/
+
         height:22em;
-        /*object-fit: cover;*/
-    }
-    .menu
-    {
-       
-        height:59em;
-        top: 20em;
-       
+
     }
         .titre_restau
     {
-        
-        /*display:flex;
-        align-items: center;*/
-        /*justify-content: center;*/
         height:8em;
         margin-left: 28%;
         margin-right: 0em;
@@ -659,13 +554,12 @@ border-radius: 0px 10px 10px 0px;*/
     }
     .titre_restau h1
     {
-        /*font-family:"shrikhand";*/
+ 
         font-size: 3.5em;
         
     }
     .coeur_vide, .coeur_plein
     {
-        /*position: absolute;*/
         font-size: 2.5em;
         right:23%;
         cursor:pointer;
@@ -673,10 +567,8 @@ border-radius: 0px 10px 10px 0px;*/
     .menu_3_choix
     {
         width:32%;
-        height:40em;
-        /* display: flex; */
         flex-direction: column;
-        margin-bottom: 2em;*/ 
+        margin-bottom: 2em; 
     }
     .entrees_plats_desserts
     {
@@ -684,65 +576,31 @@ border-radius: 0px 10px 10px 0px;*/
         flex-direction: row;
         justify-content: space-between;
     }
-    .plat_a, .plat_b, .plat_c
-        {   
-            /*width:92%;*/
-            height:10em;
-            /*display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 1px 1px 10px 10px #d3cfcf;
-            cursor: -webkit-grab; cursor: grab;*/
-        }
-        .nom_plat
-        {
-            /*overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            padding-left: 0.6em;*/
-            width:85%;
-            height:12em;
-        
-        }
+    
+        .prix_plat
+    {
+        width:3.2em;
+        display: flex;
+        align-items: center;
+    }
 
-        .titre_plat
-        {  
-            margin-top: 1em;
-            /*margin-bottom: 0em;*/
-            
-            font-size: 1.8em;
-        
-            /*font-weight: 600;*/
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .sous_titre_plat
-        {   
-            margin-top: 0.5em;
-            margin-bottom: 0.5em;
-            font-size: 1.8em;
-            font-weight: 400;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
+    .coche_tournante i
+    {
+        font-size: 1.7em;
+ 
+    }
+    
+
+
         button
         {
         font-size: 1.8em;
-        /*margin-top: 0.8em;
-        transition-duration: 1.5s;*/
         
         }
         footer
         {
             max-width: 1300px;
-            position: relative;
             margin-top: 0em;
-            height:20em;
-            top: 20em;
         }
         footer p
         {
@@ -771,8 +629,5 @@ border-radius: 0px 10px 10px 0px;*/
         {
             font-size: 1.5em;
         }
-
-    
-
 }
   
