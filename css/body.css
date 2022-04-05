@@ -25,8 +25,8 @@ body
     height:100vh;
     background: white;
     z-index:99;
-    animation:rond 1.5s ease-in-out forwards;
-    animation-delay: 0.5s;
+    animation:rond 3s ease-in-out forwards;
+    animation-delay: 1s;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -39,8 +39,8 @@ body
     border:solid 1em #ff79da;
     border-radius: 50%;
     border-bottom-color: #9356dc;
-    animation:0.3s linear infinite  spinner;
-    -webkit-animation: 0.5s linear infinite spinner;  
+    animation:0.5s linear infinite  spinner;
+    -webkit-animation: 1s linear infinite spinner;  
 }
 @keyframes spinner {
     to { -webkit-transform: rotate(360deg); }
@@ -244,7 +244,7 @@ h1
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     padding-right: 1em;
-    background-color: #ec47ad;
+    background-color: #FF79DA;
     border-radius: 20px;
     box-shadow:  3px 3px 8px #d3cfcf;
     opacity:0;

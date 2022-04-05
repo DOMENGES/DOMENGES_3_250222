@@ -77,7 +77,7 @@ header img
     opacity: 0.4;
     transition:opacity 0.5s;
 }
-.coeur_vide i:hover
+.coeur_vide i:active
 {   
     opacity:0;
 }
@@ -88,9 +88,9 @@ header img
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 -webkit-border-image: 0;
-    transition:opacity 0.5s;
+    transition:opacity 1.5s;
 }  
-.coeur_plein i:hover
+.coeur_plein i:active
 {
     opacity:1;
 }
@@ -232,7 +232,7 @@ background: #99e2d0;
 border-radius: 0px 10px 10px 0px;
 
 }
-.plat_a:hover .coche,.plat_b:hover .coche, .plat_c:hover .coche
+.plat_a:active .coche,.plat_b:active .coche, .plat_c:active .coche
 {
     animation:coche 0.5s ease-in-out forwards;
 }
@@ -256,7 +256,7 @@ border-radius: 0px 10px 10px 0px;
     border-radius: 50%;
     transform:rotate(0deg);
 }
-.plat_a:hover .coche_tournante i, .plat_b:hover .coche_tournante i, .plat_c:hover .coche_tournante i
+.plat_a:active .coche_tournante i, .plat_b:active .coche_tournante i, .plat_c:active .coche_tournante i
 {
     animation:tournante 0.2s ease-out forwards;
     animation-iteration-count: 2;
@@ -564,6 +564,14 @@ footer h4
         right:23%;
         cursor:pointer;
     }
+    .coeur_vide i:hover
+    {   
+        opacity:0;
+    }
+    .coeur_plein i:hover
+    {
+        opacity:1;
+    }
     .menu_3_choix
     {
         width:32%;
@@ -587,11 +595,16 @@ footer h4
     .coche_tournante i
     {
         font-size: 1.7em;
- 
     }
-    
-
-
+    .plat_a:hover .coche,.plat_b:hover .coche, .plat_c:hover .coche
+    {
+        animation:coche 0.5s ease-in-out forwards;
+    }
+    .plat_a:hover .coche_tournante i, .plat_b:hover .coche_tournante i, .plat_c:hover .coche_tournante i
+    {
+        animation:tournante 0.2s ease-out forwards;
+        animation-iteration-count: 2;
+    }
         button
         {
         font-size: 1.8em;
