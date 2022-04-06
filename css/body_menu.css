@@ -50,13 +50,11 @@ header img
 }
 .titre_restau
 {
-    
     display:flex;
     align-items: center;
-    height:4em;
-    margin-left: 1em;
-    margin-right: 1em;
-
+    justify-content: space-between;
+    margin-left: 2em;
+    margin-right:auto;
 }
 .titre_restau h1
 {
@@ -68,14 +66,14 @@ header img
 {
     position: absolute;
     font-size: 1.65em;
-    right:1.5em;
+    right:1em;
     cursor:pointer;
 }
 
 .coeur_vide i
 {
     opacity: 0.4;
-    transition:opacity 0.5s;
+    transition:opacity 1s;
 }
 .coeur_vide i:active
 {   
@@ -88,7 +86,7 @@ header img
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 -webkit-border-image: 0;
-    transition:opacity 1.5s;
+    transition:opacity ease-in-out 0.5s;
 }  
 .coeur_plein i:active
 {
@@ -177,7 +175,6 @@ header img
     flex-direction: column;
     padding-left: 0.6em;
     width:19em;
-    /*height:4.5em;*/
 }
 
 .titre_plat
@@ -234,7 +231,7 @@ border-radius: 0px 10px 10px 0px;
 }
 .plat_a:active .coche,.plat_b:active .coche, .plat_c:active .coche
 {
-    animation:coche 0.5s ease-in-out forwards;
+    animation:coche 0.5s ease-out forwards;
 }
 @keyframes tournante {
     from{
@@ -372,9 +369,10 @@ footer h4
     .titre_restau
     {
         height:5em;
-        margin-left: 3em;
-        margin-right: 3em;
+        margin-left: 5em;
+        /*margin-right: 3em;*/
         padding-top: 1.7em;
+    
     }
     .titre_restau h1
     { 
@@ -383,7 +381,11 @@ footer h4
     .coeur_vide, .coeur_plein
     {
         font-size: 2.3em;
-        right:1.5em;
+        right:2.5em;
+    }
+    .coeur_vide i
+    {
+        transition:opacity 1.5s;
     }
     .menu_3_choix
     {
@@ -547,21 +549,17 @@ footer h4
     }
         .titre_restau
     {
-        height:8em;
-        margin-left: 28%;
-        margin-right: 0em;
-
+        height:10em;
+        margin-left: 10em;
     }
     .titre_restau h1
     {
- 
-        font-size: 3.5em;
-        
+        font-size: 4em;
     }
     .coeur_vide, .coeur_plein
     {
-        font-size: 2.5em;
-        right:23%;
+        font-size: 3em;
+        right:3em;
         cursor:pointer;
     }
     .coeur_vide i:hover
