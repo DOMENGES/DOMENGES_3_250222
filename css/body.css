@@ -50,6 +50,7 @@ body
   }
 header
 {
+    width:100%;
     display: flex;
     justify-content: center;
     height:6.3em;
@@ -73,9 +74,11 @@ header img
 {
     padding:0.7em;
 }
+
 input
 {
     width: 7.5em;
+    font-family: "Roboto";
     font-size: 1em;
     font-weight: 700;
     border:none;
@@ -91,6 +94,7 @@ input:focus
 }
 .presentation
 {
+    width:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,6 +169,7 @@ h1
 }
 .fonctionnement
 {
+    width:100%;
     height:21.3em;
 }
 .titre_fonction
@@ -178,7 +183,7 @@ h1
 }
 .etapes_1_2_3
 {
-    width:95%;
+    /*width:95%;*/
  
     display: flex;
     flex-direction: column;
@@ -187,7 +192,7 @@ h1
 }
 .etape
 {
-    width:100%;
+    width:95%;
     height:4em;
     display: flex;
     align-items: center;
@@ -281,6 +286,7 @@ h1
 }
 .restaurants
 {
+    /*width:100%;*/
     margin-top: 1.5em;
     background-color:#f2f2f2 ;
     height:72em;
@@ -292,13 +298,14 @@ h1
 }
 .restau_1_2_3_4
 {
+    /*width:100%;*/
     display:flex;
     flex-direction: column;
     align-items: center;
 }
 .restau_1, .restau_2, .restau_3, .restau_4
 {
-    width:90%;
+    width:95%;
     display:flex;
     flex-direction: column;
     background-color: white;
@@ -397,6 +404,7 @@ h1
 }
 footer
 {
+    /*width:100%;*/
     font-family:"Roboto";
     background-color: black;
     color:white;
