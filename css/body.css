@@ -183,8 +183,6 @@ h1
 }
 .etapes_1_2_3
 {
-    /*width:95%;*/
- 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -286,7 +284,6 @@ h1
 }
 .restaurants
 {
-    /*width:100%;*/
     margin-top: 1.5em;
     background-color:#f2f2f2 ;
     height:72em;
@@ -298,7 +295,7 @@ h1
 }
 .restau_1_2_3_4
 {
-    /*width:100%;*/
+
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -383,7 +380,7 @@ h1
 .coeur_vide i
 {
     opacity: 0.5;
-    transition:opacity 0.5s;
+    transition:opacity 0.5s 0.5s;
 }
 .coeur_vide i:hover
 {   
@@ -396,7 +393,7 @@ h1
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 -webkit-border-image: 0;
-    transition:opacity 0.5s;
+    transition:opacity 1s 0.5s;
 }  
 .coeur_plein i:hover
 {

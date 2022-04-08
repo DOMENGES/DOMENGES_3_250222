@@ -137,7 +137,7 @@ header img
 {
     animation:opacite 4s forwards;
     animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
+    
     animation-delay: 0.01s;
     display: flex;
     flex-direction: column;
@@ -165,7 +165,8 @@ header img
     background-color: white;
     border-radius: 10px;
     box-shadow: 1px 1px 10px 10px #d3cfcf;
-    cursor: -webkit-grab; cursor: grab;
+    cursor: -webkit-grab; 
+    cursor: grab;
 }
 
 .nom_plat
@@ -275,15 +276,38 @@ button
     background: linear-gradient(#ff79da,#9356dc);
     box-shadow: 5px 5px 10px 3px #d3cfcf;
     margin-top: 0.5em;
-    transition-property: background, box-shadow;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
     cursor:pointer;
 }
-button:hover
+@keyframes rose 
 {
-    background: linear-gradient(#fac3ea,#ba92eb);
-    box-shadow: 5px 5px 30px 3px #7c7979;
+    0%{
+        background: linear-gradient(rgb(255, 122, 217, 1),rgba(147, 86, 220, 1));
+        box-shadow: 5px 5px 10px 3px rgba(211, 207, 207, 1);
+    }
+    20%{
+        background: linear-gradient(rgb(255, 135, 219),rgb(181, 121, 255));
+        box-shadow: 5px 5px 10px 3px rgb(192, 178, 178);
+    }
+    35%{
+        background: linear-gradient(rgb(250, 155, 220),rgb(188, 134, 253));
+        box-shadow: 5px 5px 10px 3px rgb(177, 158, 158);
+    }
+    
+    50%{
+        background: linear-gradient(rgb(240, 177, 222),rgb(214, 181, 252));
+        box-shadow: 5px 5px 10px 3px rgb(146, 130, 130);
+    }
+    100%{
+        background: linear-gradient(rgb(252, 195, 236),rgb(209, 173, 250));
+        box-shadow: 5px 5px 10px 3px rgb(116, 103, 103);
+    }
+}
+
+button:active
+{
+    /*background: linear-gradient(#fac3ea,#ba92eb);
+    box-shadow: 5px 5px 30px 3px #7c7979;*/
+    animation: rose 0.8s ease-in-out forwards;
 }
 footer
 {
@@ -481,7 +505,7 @@ footer h4
     {
     font-size: 1.7em;
     margin-top: 0.8em;
-    transition-duration: 1.5s;
+    /*transition-duration: 1.5s;*/
     
     }
     footer
